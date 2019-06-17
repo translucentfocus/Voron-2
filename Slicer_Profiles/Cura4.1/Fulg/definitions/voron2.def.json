@@ -45,7 +45,7 @@
         "machine_max_feedrate_z":                       { "default_value": 40 },
         "machine_max_feedrate_e":                       { "default_value": 120 },
         "machine_gcode_flavor":                         { "default_value": "RepRap (RepRap)" },
-        "machine_start_gcode":                          { "default_value": "G10 P0 S{material_print_temperature_layer_0} R{material_standby_temperature}\nM116\nM98 P\"/macros/print_scripts/start_print.g\"\nM207 S{retraction_amount} Z{retraction_hop}\"" },
+        "machine_start_gcode":                          { "default_value": "M98 P\"/macros/print_scripts/start_print.g\"" },
         "machine_end_gcode":                            { "default_value": "M98 P\"/macros/print_scripts/stop_print.g\"" },
 
         "adhesion_type":                                { "default_value": "skirt" },
