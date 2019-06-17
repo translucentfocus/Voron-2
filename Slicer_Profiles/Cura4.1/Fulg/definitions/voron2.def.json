@@ -15,7 +15,6 @@
         "has_variants": true,
         "variants_name": "Toolhead",
         "preferred_variant_name": "V6 0.40mm",
-        "supports_usb_connection": false,
         "machine_extruder_trains":  { "0": "voron2_extruder" }
     },
 
