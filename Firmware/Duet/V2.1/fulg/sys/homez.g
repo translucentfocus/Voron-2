@@ -9,14 +9,14 @@ M98 P"/macros/print_scripts/speed_probing.g"
 
 ; Lift Z relatively to current position
 G91
-G1 Z10 F2000
+G1 Z15 F2000
 
 ; Back to absolute positioning
 G90
 
 ; Coarse homing with the inductive probe
-M98 P"/macros/probe_scripts/activate_z_probe.g"
-M98 P"/macros/probe_scripts/goto_bed_center.g"
+M98 P"/macros/print_scripts/activate_z_probe.g"
+M98 P"/macros/print_scripts/goto_bed_center.g"
 G30 Z-9999
 
 ; Restore high Z currents

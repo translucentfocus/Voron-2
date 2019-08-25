@@ -1,1 +1,1 @@
-M906 X800 Y800
+M913 X60 Y60 ; Set AB current to 60%

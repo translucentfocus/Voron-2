@@ -1,1 +1,1 @@
-M906 X1200 Y1200 I30
+M913 X100 Y100 ; restore AB current to 100%

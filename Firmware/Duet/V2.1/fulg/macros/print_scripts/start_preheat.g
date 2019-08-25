@@ -21,7 +21,7 @@ G90
 
 ; Move XY to preheat position
 M98 P"/macros/print_scripts/xy_current_low.g"
-M98 P"/macros/probe_scripts/goto_bed_center.g"
+M98 P"/macros/print_scripts/goto_bed_center.g"
 M98 P"/macros/print_scripts/xy_current_high.g"
 
 M207 S5.0 F5000 T3200 Z0.4  ; setup firmware retraction
