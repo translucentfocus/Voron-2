@@ -41,6 +41,11 @@ The list should be structured in the following way:
 
 - Corner panel clip that fit 3mm or 1/8" panels with foam tape.
 
+## Chron
+[SKR 1.3 TMC2208 UART Config](https://github.com/VoronDesign/Voron-2/tree/master/Mods/Chron)
+
+- Configuration for SKR 1.3 TMC2208 UART
+
 ## Danowar
 
 [F6 Board Mount](https://github.com/VoronDesign/Voron-2/tree/master/Mods/Danowar/F6_Board_Mount)
@@ -58,6 +63,12 @@ The list should be structured in the following way:
 [Tablet mount](https://github.com/VoronDesign/Voron-2/tree/master/Mods/Danowar/Tablet_Mount)
 
 - Detachable mount for tablet using magnets.
+
+## Dunar
+
+[Panel Rest](https://github.com/VoronDesign/Voron-2/tree/master/Mods/Dunar/Panel_Rest)
+
+- External panel holder
 
 ## FHeilmann
 
