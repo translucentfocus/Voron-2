@@ -1,1 +1,1 @@
-M913 Z25       ; set Z motors current to 25%
+M913 Z40       ; set Z motors current to 40%

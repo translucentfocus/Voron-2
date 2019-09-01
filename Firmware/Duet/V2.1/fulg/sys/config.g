@@ -30,8 +30,8 @@ M586 P2 S0              ; Disable Telnet
 ;     front
 
 ; Drive directions
-M569 P0 S1 ; A          ; todo, fix the wiring... A & B should be the same
-M569 P1 S0 ; B
+M569 P0 S1 ; A
+M569 P1 S1 ; B
 M569 P3 S1 ; Extruder #1
 M569 P4 S0 ; Extruder #2
 M569 P5 S0 ; Z1
@@ -83,7 +83,7 @@ M143 H0 S110                                    ; maximum bed temperature
 ;M307 H1 A454.1 C235.9 D4.5 S1.00 B0             ; 104GT2 PID, 30W heater
 
 ; Hotend #1 heater
-M305 S"Hotend" P1 X200                          ; 1st nozzle is PT100, first channel
+M305 S"Hotend" P1 X200 W4                        ; 1st nozzle is 4-wire PT100, first channel
 ;M307 H1 A568.8 C203.2 D4.0 S1.00 V24.5 B0       ; E3D V6 + PT100 PID, 30W heater
 ;M307 H1 A365.9 C236.7 D4.9 S1.00 V24.5 B0       ; E3D Volcano + PT100 PID, 30W heater
 ;M307 H1 A614.3 C180.2 D5.3 S1.00 V24.4 B0       ; Mosquito + PT100 PID, 50W heater
