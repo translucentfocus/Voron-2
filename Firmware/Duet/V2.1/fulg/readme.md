@@ -6,9 +6,15 @@ You can see how I make my backups with the included batch file.
 
 I am sharing this config because it is useful to see real-world builds instead of simplistic samples. Use this as a starting point, or as a reference for your own config. Feel free to ask questions.
 
+# Why
+
+I just prefer RRF, that's all. If you are not sure, need support and don't want troubles, use the recommended firmware on your VORON (Klipper-based setup on SKR 1.3 boards).
+
+Hopefully this is useful for you. If not, well, I tried. :)
+
 # How
 
-To adapt this to your machine, you will need to edit the config. Here's a checklist of what you need to change.
+To adapt this to your machine, you will need to edit the config. Here's a walkthrough of what you need to change.
 
 In /sys/config.g:
 - Change the network name to match your printer (`M550`)
@@ -17,7 +23,7 @@ In /sys/config.g:
 - Set the axis maxima to match your bed size (`M208`). Don't worry about axis minima for now.
 - Set the drive directions to match your motors (`M569`). You can either invert the `S` parameter or flip the motor connector.
 - Use `M564 H0` in the Console to enable movement before homing. You can set it in `/sys/config.g` during initial setup. **_Be careful not to make unplanned moves while this command is in effect._**
-- Put the carriage in the middle of the bed. Double-check XY movements using small distances (< 5mm). +X should go to the right, +Y should go to the back.
+- Put the carriage _by hand_ in the middle of the bed. Double-check XY movements using small distances (< 5mm). +X should go to the right, +Y should go to the back. You can either change the `S` parameter of `M569` or physically reverse the motor plug, as you prefer. Do not disconnect motors while the board is powered. If both axes are reversed, you need to reverse both motors. If you can only get one of the two axes working in the correct direction, flip just one of them (it doesn't matter which), then check if you need to invert both axes again. 
 - Check that the XY endstops work with `M119` in the Console. Each endstop will return its status. Press one by hand and issue `M119` again to see the change. Make sure both endstops work before continuing.
 - You can isolate individual Z motors with `M584 Zx`, replacing `x` with the number of the Z motor you want to check. i.e. `M584 Z5`, `M584 Z6`, etc. With one motor isolated, move Z up/down a few mm, just enough to confirm the direction. Adjust the config as needed (`S` parameter of `M569`) and reboot between each attempt. **_Do not attempt to home with isolated Z motors, you will break your printer._**
 - At this point you should be able to home X and Y separately from DWC (do not try full homing yet!). The gantry will rise a bit prior to moving each axis (you did fix your Z direction before, right?).
@@ -64,8 +70,4 @@ You could probably make this work with a BLTouch, but you'll have to search else
 
 Initially I wanted to have a removable Z probe (like those discs you can put at the bottom of the nozzle) used only for probing the bed mesh, but it was not precise enough, this is why I moved to piezo. Perhaps you could make this work.
 
-# Why
-
-I just prefer RRF, that's all. If you are not sure, need support and don't want troubles, use the recommended firmware on your VORON (Klipper-based setup on SKR 1.3 boards).
-
-Hopefully this is useful for you. If not, well, I tried. :)
+A bed mesh is generally not required if your plate and/or PEI is flat. Remember that if you probe a mesh (even just for testing), it becomes active until you disable it with `G29 S0` or `M561`, or power cycle the printer. You can load a previously probed mesh with `G29 S1`.
