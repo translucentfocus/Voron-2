@@ -83,7 +83,6 @@
         "cool_fan_speed_min":                           { "value": "cool_fan_speed" },
         "cool_fan_full_at_height":                      { "value": "resolveOrValue('layer_height_0') + resolveOrValue('layer_height') * max(1, cool_fan_full_layer - 1)" },
         "cool_fan_full_layer":                          { "value": 4 },
-        "slicing_tolerance":                            { "default_value": "exclusive" },
         "layer_height_0":                               { "resolve": "max(0.2, min(extruderValues('layer_height')))" },
         "line_width":                                   { "value": "machine_nozzle_size * 1.125" },
         "wall_line_width":                              { "value": "machine_nozzle_size" },
