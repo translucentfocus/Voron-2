@@ -10,11 +10,12 @@
 
 M400
 
-M558 P7 I0 F120 H3 T18000 A10 S0.005 B1 R0.2
-G31 T7 P500 X0 Y0 Z2.89 ; Set Z offset (if positive, greater value = lower nozzle. if negative, more negative = higher nozzle)
+; TriangleLabs Spring Steel Flexplate
+;M558 P7 I0 F120 H3 T18000 A10 S0.005 B1 R0.2
+;G31 T7 P500 X0 Y0 Z2.18 ; Set parameters for z switch (if positive, greater value = lower nozzle. if negative, more negative = higher nozzle)
 
-; Flexplate
-;M558 P7 I0 F120 H10 T18000 A10 S0.005 B1 R0.2
-;G31 T7 P500 X0 Y0 Z1.55 ; Set parameters for z switch (if positive, greater value = lower nozzle. if negative, more negative = higher nozzle)
+; Energetic Spring Steel Flexplate
+M558 P7 I0 F120 H3 T18000 A10 S0.005 B1 R0.2
+G31 T7 P500 X0 Y0 Z2.12 ; Set parameters for z switch (if positive, greater value = lower nozzle. if negative, more negative = higher nozzle)
 
 G4 P200

@@ -9,4 +9,4 @@ G1 E-5.00 F1000
 M104 S0                         ; turn off hotend
 M140 S0                         ; turn off heatbed
 M106 S0                         ; shut off blower
-;M84                             ; turn off motors
+M84                             ; turn off motors

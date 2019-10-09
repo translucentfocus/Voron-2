@@ -28,7 +28,7 @@ M98 P"/sys/bed_probe_points.g"
 
 ; Final Z height adjust
 M98 P"/macros/print_scripts/do_z_switch_probe.g"
-M98 P"/macros/print_scripts/goto_bed_center.g"
+;M98 P"/macros/print_scripts/goto_bed_center.g"
 
 ; Restore normal speed & accel
 M98 P"/macros/print_scripts/speed_printing.g"
@@ -36,6 +36,3 @@ M98 P"/macros/print_scripts/speed_printing.g"
 ; Restore high current and make sure Z probe is active
 M98 P"/macros/print_scripts/xy_current_high.g"
 M98 P"/macros/print_scripts/z_current_high.g"
-
-; Apply saved heightmap
-G29 S1
