@@ -60,8 +60,7 @@ M208 X313 Y304 Z275 S0          ; Set axis maxima
 
 ; Bed leveling
 M671 X-65:-65:365:365 Y-20:380:380:-20 S20      ; Define Z belts locations (Front_Left, Back_Left, Back_Right, Front_Right)
-M557 X50:275 Y50:275 S50                        ; Define bed mesh grid (inductive probe, positions include the Z offset!)
-;M557 X25:275 Y25:275 S50                        ; Define bed mesh grid (bed piezo)
+M557 X25:275 Y25:275 S25                        ; Define bed mesh grid (inductive probe, positions include the Z offset!)
 
 ; Accelerations and speed
 M98 P"/macros/print_scripts/speed_printing.g"

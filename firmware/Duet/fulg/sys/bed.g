@@ -36,3 +36,6 @@ M98 P"/macros/print_scripts/speed_printing.g"
 ; Restore high current and make sure Z probe is active
 M98 P"/macros/print_scripts/xy_current_high.g"
 M98 P"/macros/print_scripts/z_current_high.g"
+
+; Load previously probed bed mesh
+G29 S1
