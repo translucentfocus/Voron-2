@@ -9,7 +9,7 @@ Copy these directories entirely into the Cura profile location for your platform
 
 **Windows**
 ```
-C:\Users\%USERNAME%\AppData\Roaming\cura\$CURA_VERSION\
+%APPDATA%\cura\4.3\$CURA_VERSION\
 ```
 
 **MacOS**
